@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    box-sizing: border-box;  
 }
 
 header {
@@ -13,20 +14,24 @@ header {
 
 .upper-header {
     display: flex;
-    border: solid;
     justify-content: space-between;
     align-items: center;
 }
 
 input {
+    appearance: none;
+    height: 2rem;
     width: 30rem;
     border-radius: 2rem;
 }
 
 .user-panel {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
+    border: solid;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .user-avi{
@@ -35,23 +40,51 @@ input {
 
 .lower-header {
     display: flex;
-    border: solid;
     justify-content: space-between;  
 }
 
 .user-panel-two {
     display: flex;
+    border: solid;
+    gap: 1rem;
+    font-weight: bolder;
+}
+
+.hi {
+    font-size: x-small;
+    padding-top: 1rem;
+}
+
+.user-panel-two p{
+    font-size: larger;
 }
 
 .lower-header .project-controls {
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
-.project-controls ul{
+.project-controls ul {
     display: flex;
-    flex-direction: row;
+    
+}
+
+.project-controls ul li{
+    display: flex;
+    justify-content: center;
     border: solid;
+    font-size: large;
+    color: #fafbf9;
+    background-color: #3D52D5;
+    border-radius: 2rem;
+    padding: 0.25rem .5rem;
+}
+
+.file a{
+    color: #fafbf9;
+    text-decoration: none;
 }
 
 .sidebar {
@@ -59,6 +92,17 @@ input {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     padding: 1rem;
+    background-color: #3D52D5;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.dashboard-controls,
+.sidebar a{
+    color: #fafbf9;
+    border: #fafbf9 solid;
 }
 
 ul{
@@ -70,28 +114,32 @@ ul{
 main {
     display: grid;
     grid-template-columns: 1fr 250px;
+    background-color: #CDDDDD;
+    padding: 0 1rem 1rem 1rem;
+    box-sizing: border-box;
 }
 
 #project-header {
-    padding-left: 2.5rem;;
+    padding-left: 2.25rem;;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
     grid-template-rows: repeat(3, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 0.5rem solid orange;
+    border-left: 0.5rem solid #DC965a;
     padding: 1rem;
     background-color: #fafbf9;
     border-radius: 0.5rem;
+    box-shadow: #778899 0.1rem 0.1rem .1rem;
 }
 
 
@@ -115,12 +163,10 @@ a {
     height: 1.5rem;
 }
 
-.secondary .title-card {
-    margin-bottom: 1.5rem;
-}
-
 .announcements,
 .trending-posts {
     background-color: #fafbf9;
-    padding: 0 1rem
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: #778899 0.1rem 0.1rem 0.1rem;
 }
