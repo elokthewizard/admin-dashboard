@@ -9,32 +9,36 @@
 </head>
 <body>
     <header>
-        <form action="#">
-            <label for="search">&#128269;</label>
-            <input type="search" name="search-query" id="search">
-        </form>
-        <div class="user-panel">
-            <icon>&#128276;</icon>
-            <img class="user-avi" alt="[i]" src="">
-            <a href="#">Bruce Wayne</a> 
+        <div class="upper-header">
+            <form action="#">
+                <label for="search">&#128269;</label>
+                <input type="search" name="search-query" id="search">
+            </form>
+            <div class="user-panel">
+                <icon>&#128276;</icon>
+                <img class="user-avi" alt="[i]" src="">
+                <a href="#">Bruce Wayne</a>
+            </div>
         </div>
-        <div class="greeting">
+        <div class="lower-header">
             <img class="user-avi" alt="[i]" src="">
-            <p>Hi there,</p>
-            <p>Bruce Wayne (@batsy)</p>
+            <div class="user-greeting">
+                <p>Hi there,</p>
+                <p>Bruce Wayne (@batsy)</p>
+            </div>
+            <nav class="project-controls">
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Share</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="project-controls">
-            <ul>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Upload</a></li>
-                <li><a href="#">Share</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="sidebar">
         <nav class="dashboard-controls">
             <h1>Dashboard</h1>
-            <ul>
+            <ul class="dash-one">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#messages">Messages</a></li>
@@ -42,7 +46,7 @@
                 <li><a href="#tasks">Tasks</a></li>
                 <li><a href="#communities">Communities</a></li>
             </ul>
-            <ul>
+            <ul class="dash-two">
                 <li><a href="#settings">Settings</a></li>
                 <li><a href="#support">Support</a></li>
                 <li><a href="#privacy">Privacy</a></li>
