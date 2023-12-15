@@ -8,12 +8,14 @@ header {
     padding: 0 2rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    background-color: #fafbf9
 }
 
 .upper-header {
     display: flex;
     border: solid;
     justify-content: space-between;
+    align-items: center;
 }
 
 input {
@@ -24,6 +26,7 @@ input {
 .user-panel {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .user-avi{
@@ -58,7 +61,7 @@ input {
     padding: 1rem;
 }
 
-nav ul{
+ul{
     text-decoration: none;
     list-style: none;
     gap: 1rem;
@@ -73,7 +76,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-template-rows: repeat(3, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     padding: 1.5rem;
 }
 
@@ -81,23 +84,25 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid red;
+    border-left: 0.5rem solid orange;
     padding: 1rem;
-    height: auto;
+    background-color: #fafbf9;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    justify-self: flex-start;
 }
 
 .card-controls {
     display: flex;
     justify-content: flex-end;
     align-self: flex-end;
-    border: solid;
 }
 
 .card-controls ul{
     display: flex;
     gap: 1rem;
-    list-style: none;
-    border: dashed;
 }
 
 a {
@@ -114,3 +119,7 @@ a {
     border: solid;
 }
 
+.announcements {
+    background-color: #fafbf9;
+
+}
