@@ -72,12 +72,16 @@ main {
     grid-template-columns: 1fr 250px;
 }
 
+#project-header {
+    padding-left: 2.5rem;;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-template-rows: repeat(3, minmax(250px, 1fr));
-    gap: 3rem;
-    padding: 1.5rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
 }
 
 .card {
@@ -90,9 +94,6 @@ main {
     border-radius: 0.5rem;
 }
 
-.card-title {
-    justify-self: flex-start;
-}
 
 .card-controls {
     display: flex;
@@ -110,16 +111,12 @@ a {
     color: gray;
 }
 
-.secondary {
-
-    padding: 0 1rem;;
+.secondary .title-card {
+    margin-bottom: 1.5rem;
 }
 
-.title-card h2{
-    border: solid;
-}
-
-.announcements {
+.announcements,
+.trending-posts {
     background-color: #fafbf9;
-
+    padding: 0 1rem
 }
