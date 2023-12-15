@@ -6,6 +6,7 @@ body {
 header {
     display: block;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .upper-header {
@@ -18,6 +19,12 @@ header {
     border: solid;
 }
 
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+}
+
 .project-controls ul{
     display: flex;
     flex-direction: row;
@@ -26,5 +33,41 @@ header {
 .sidebar {
     border: solid;
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+main {
+    border: solid blue;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border: solid red;
+    padding: 1rem;
+    
+}
+
+.card-controls ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.secondary {
+    border: solid;
+    display: grid;
+    gap: 2rem;
 }
