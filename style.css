@@ -28,6 +28,8 @@ nav ul{
 .project-controls ul{
     display: flex;
     flex-direction: row;
+    border: solid;
+    border: solid;
 }
 
 .sidebar {
@@ -39,14 +41,16 @@ nav ul{
 main {
     border: solid blue;
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 250px;
     gap: 2rem;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .card {
@@ -68,6 +72,9 @@ a {
 
 .secondary {
     border: solid;
-    display: grid;
-    gap: 2rem;
 }
+
+.title-card h2{
+    border: solid;
+}
+
