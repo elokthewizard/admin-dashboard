@@ -9,13 +9,29 @@ header {
     padding: 0 2rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: #fafbf9
+    background-color: #fafbf9;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 1.5rem;
+    align-items: center;
 }
 
 .upper-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.upper-header img {
+    vertical-align: bottom;
+    padding-right: 1rem;
+}
+
+form {
+    display: flex;
 }
 
 input {
@@ -40,12 +56,11 @@ input {
 
 .lower-header {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .user-panel-two {
     display: flex;
-    border: solid;
     gap: 1rem;
     font-weight: bolder;
 }
@@ -161,6 +176,7 @@ a {
 
 .svg-icon {
     height: 1.5rem;
+    align-self: center;
 }
 
 .announcements,
