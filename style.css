@@ -22,11 +22,11 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0rem 1rem 0rem;
+    
 }
 
 .upper-header img {
-    vertical-align: bottom;
+    vertical-align: text-bottom;
     padding-right: 1rem;
 }
 
@@ -45,13 +45,18 @@ input {
     display: flex;
     gap: 2rem;
     align-items: center;
-    border: solid;
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
 .user-avi{
+    display: block;
     align-self: center;
+    height: 2.5rem;
+}
+
+#big {
+    height: 4rem;
 }
 
 .lower-header {
@@ -71,14 +76,12 @@ input {
 }
 
 .user-panel-two p{
-    font-size: larger;
+    font-size: large;
 }
 
 .lower-header .project-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
 }
 
 .project-controls ul {
@@ -88,13 +91,12 @@ input {
 
 .project-controls ul li{
     display: flex;
-    justify-content: center;
-    border: solid;
     font-size: large;
     color: #fafbf9;
+    font-weight: bold;
     background-color: #3D52D5;
     border-radius: 2rem;
-    padding: 0.25rem .5rem;
+    padding: 0.7rem 2rem;
 }
 
 .file a{
@@ -175,14 +177,58 @@ a {
 }
 
 .svg-icon {
-    height: 1.5rem;
+    height: 2rem;
     align-self: center;
+}
+
+.announcements {
+    padding: 1rem;
+}
+
+.post h2{
+    margin: 0;
+    margin: .75rem 0;
+    padding: 0;
+}
+
+.post .info {
+    margin: 0;
+    padding: 0;
+    margin: .5rem 0;
 }
 
 .announcements,
 .trending-posts {
     background-color: #fafbf9;
-    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: #778899 0.1rem 0.1rem 0.1rem;
+}
+
+.trend {
+    display: flex;
+    justify-content: center;
+}
+
+.trend {
+    padding: 0;
+}
+
+.trend img {
+    margin-left: -3rem;
+    padding-right: 0.65rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+}
+
+.user h3 {
+    margin: 0;
+    margin-top: 1.25rem;
+}
+
+.user p {
+    margin: 0;
 }
